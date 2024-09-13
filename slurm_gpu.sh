@@ -6,8 +6,8 @@
 #SBATCH --gpus=1
 #  #SBATCH --cpus-per-task 1             # number of cpus for each task. One by default
 #SBATCH --partition shared-gpu         # the partition to use. By default debug-cpu (seems to be overwrittem when less than default)
-#SBATCH --mem=10000             #memory needed (3GB default)
-#SBATCH --time 60:00                  # maximum run time.
+#SBATCH --mem=20000             #memory needed (3GB default)
+#SBATCH --time 90:00                  # maximum run time.
  
 
 module purge                           #Unload all modules
@@ -29,4 +29,4 @@ source activate charfctgpu # conda activate charfct does not work
 echo "after calling source: $PATH"
 
 
-srun python main.py                      # run your software
+srun python main_alpha_stab.py                      # run your software

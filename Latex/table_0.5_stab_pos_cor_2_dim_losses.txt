@@ -1,0 +1,7 @@
+\begin{tabular}{rrr}
+\hline
+    loss\_gen &   prm\_loss &    mmd\_comp \\
+\hline
+ -0.00162257 & -0.0015748 & 0.000330598 \\
+\hline
+\end{tabular}
